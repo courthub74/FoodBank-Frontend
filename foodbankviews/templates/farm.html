@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br><br>
+
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ farmington.photo }}" class="card-img-top" height="200"  >
+		  <div class="card-body">
+		    <h5 class="card-title">{{ farmington.name }}</h5>
+		    <p class="card-text">{{ farmington.address }}</p>
+		    <p class="card-text">{{ farmington.city }}</p>
+		    <p class="card-text">{{ farmington.state }}</p>
+		    <p class="card-text">{{ farmington.zipcode }}</p>
+		    <p class="card-text">{{ farmington.phone }}</p>
+		    <p class="card-text">{{ farmington.details }}</p>
+		    <a href="{{ farmington.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	</div>
+	
+	<br><br>
+
+{% endblock %}
