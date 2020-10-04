@@ -1,0 +1,26 @@
+	{% extends 'base.html' %}
+
+	{% block content %}
+
+
+	<br><br>
+
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ south.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ south.name }}</h5>
+		    <p class="card-text">{{ south.address }}</p>
+		    <p class="card-text">{{ south.city }}</p>
+		    <p class="card-text">{{ south.state }}</p>
+		    <p class="card-text">{{ south.zipcode }}</p>
+		    <p class="card-text">{{ south.phone }}</p>
+		    <p class="card-text">{{ south.details }}</p>
+		    <a href="{{ south.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	</div>
+	
+	<br><br>
+
+	{% endblock %}

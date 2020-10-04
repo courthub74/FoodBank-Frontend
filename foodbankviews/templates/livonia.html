@@ -1,0 +1,26 @@
+	{% extends 'base.html' %}
+
+	{% block content %}
+
+
+	<br><br>
+
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ liv.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ liv.name }}</h5>
+		    <p class="card-text">{{ liv.address }}</p>
+		    <p class="card-text">{{ liv.city }}</p>
+		    <p class="card-text">{{ liv.state }}</p>
+		    <p class="card-text">{{ liv.zipcode }}</p>
+		    <p class="card-text">{{ liv.phone }}</p>
+		    <p class="card-text">{{ liv.details }}</p>
+		    <a href="{{ liv.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	</div>
+	
+	<br><br>
+
+	{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br><br>
+
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ farmhills1.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ farmhills1.name }}</h5>
+		    <p class="card-text">{{ farmhills1.address }}</p>
+		    <p class="card-text">{{ farmhills1.city }}</p>
+		    <p class="card-text">{{ farmhills1.state }}</p>
+		    <p class="card-text">{{ farmhills1.zipcode }}</p>
+		    <p class="card-text">{{ farmhills1.phone }}</p>
+		    <p class="card-text">{{ farmhills1.details }}</p>
+		    <a href="{{ farmhills1.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	</div>
+	
+	<br><br>
+
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ farmhills2.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ farmhills2.name }}</h5>
+		    <p class="card-text">{{ farmhills2.address }}</p>
+		    <p class="card-text">{{ farmhills2.city }}</p>
+		    <p class="card-text">{{ farmhills2.state }}</p>
+		    <p class="card-text">{{ farmhills2.zipcode }}</p>
+		    <p class="card-text">{{ farmhills2.phone }}</p>
+		    <p class="card-text">{{ farmhills2.details }}</p>
+		    <a href="{{ farmhills2.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	</div>
+	
+	<br><br>
+
+{% endblock %}
