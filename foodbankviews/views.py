@@ -2,7 +2,9 @@ from django.shortcuts import render
 
 #HOME
 def home(request):
-	return render(request, "home.html", {})
+	intro = "This Is The:"
+	nothingyet = "Choose Your State Above"
+	return render(request, "home.html", {'nothingyet': nothingyet, 'intro': intro})
 
 
 #MICHIGAN - List of Cities
