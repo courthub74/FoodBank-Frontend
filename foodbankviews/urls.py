@@ -10,5 +10,5 @@ urlpatterns = [
     path('southfield/', views.southfield, name="southfield"),
 
     path('illinois/', views.illinois, name="illinois"),
-    
+    path('chicago/', views.chicago, name="chicago"),
 ]

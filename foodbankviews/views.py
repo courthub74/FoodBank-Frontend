@@ -63,3 +63,26 @@ def illinois(request):
 	return render(request, "illinois.html", {})
 
 
+#Chicago
+def chicago(request):
+	import requests
+	import json
+
+	chicago7 = requests.get("https://foodbankapi.herokuapp.com/foodbank/7/?format=json")
+	chi7 = json.loads(chicago7.content)
+
+	chicago8 = requests.get("https://foodbankapi.herokuapp.com/foodbank/8/?format=json")
+	chi8 = json.loads(chicago8.content)
+
+	chicago9 = requests.get("https://foodbankapi.herokuapp.com/foodbank/9/?format=json")
+	chi9 = json.loads(chicago9.content)
+
+	chicago10 = requests.get("https://foodbankapi.herokuapp.com/foodbank/10/?format=json")
+	chi10 = json.loads(chicago10.content)
+
+	chicago11 = requests.get("https://foodbankapi.herokuapp.com/foodbank/11/?format=json")
+	chi11 = json.loads(chicago11.content)
+
+	return render(request, "chicago.html", {'chi7': chi7, 'chi8': chi8, 'chi9': chi9, 'chi10': chi10, 'chi11': chi11})
+
+
