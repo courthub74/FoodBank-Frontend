@@ -4,20 +4,21 @@
 
 	<div class="container">
 
-		<h1>Farmington <span class="badge badge-light"> MI</span></h1>
+		<h2>Farmington <span class="badge badge-light">MI</span></h2>
 
 		<br>
 
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ farmington.photo }}" class="card-img-top" height="200"  >
 		  <div class="card-body">
-		    <h5 class="card-title">{{ farmington.name }}</h5>
-		    <p class="card-text">{{ farmington.address }}</p>
-		    <p class="card-text">{{ farmington.city }}</p>
-		    <p class="card-text">{{ farmington.state }}</p>
-		    <p class="card-text">{{ farmington.zipcode }}</p>
-		    <p class="card-text">{{ farmington.phone }}</p>
-		    <p class="card-text">{{ farmington.details }}</p>
+		    <div class="small">
+			    <h5 class="card-title">{{ farmington.name }}</h5>
+			    <p class="card-text">{{ farmington.address }}</p>
+			    <p class="card-text">{{ farmington.city }} {{ farmington.state }} {{ farmington.zipcode }}</p>
+			    <p class="card-text">{{ farmington.phone }}</p>
+			    <p class="card-text">{{ farmington.details }}</p>
+			 </div>
+			 <br>
 		    <a href="{{ farmington.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>

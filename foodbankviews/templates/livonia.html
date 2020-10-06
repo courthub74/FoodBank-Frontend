@@ -6,16 +6,22 @@
 	<br>
 
 	<div class="container">
+
+		<h1>Livonia <span class="badge badge-light">MI</span></h1>
+
+		<br>
+
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ liv.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
-		    <h5 class="card-title">{{ liv.name }}</h5>
-		    <p class="card-text">{{ liv.address }}</p>
-		    <p class="card-text">{{ liv.city }}</p>
-		    <p class="card-text">{{ liv.state }}</p>
-		    <p class="card-text">{{ liv.zipcode }}</p>
-		    <p class="card-text">{{ liv.phone }}</p>
-		    <p class="card-text">{{ liv.details }}</p>
+		  	<div class="small">
+			    <h5 class="card-title">{{ liv.name }}</h5>
+			    <p class="card-text">{{ liv.address }}</p>
+			    <p class="card-text">{{ liv.city }} {{ liv.state }} {{ liv.zipcode }}</p>
+			    <p class="card-text">{{ liv.phone }}</p>
+			    <p class="card-text">{{ liv.details }}</p>
+		    </div>
+		    <br>
 		    <a href="{{ liv.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>

@@ -85,6 +85,23 @@ def chicago(request):
 	chicago11 = requests.get("https://foodbankapi.herokuapp.com/foodbank/11/?format=json")
 	chi11 = json.loads(chicago11.content)
 
-	return render(request, "chicago.html", {'chi7': chi7, 'chi8': chi8, 'chi9': chi9, 'chi10': chi10, 'chi11': chi11})
+	chicago19 = requests.get("https://foodbankapi.herokuapp.com/foodbank/19/?format=json")
+	chi19 = json.loads(chicago19.content)
+
+	chicago20 = requests.get("https://foodbankapi.herokuapp.com/foodbank/20/?format=json")
+	chi20 = json.loads(chicago20.content)
+
+	return render(request, "chicago.html", {'chi7': chi7, 'chi8': chi8, 'chi9': chi9, 'chi10': chi10, 'chi11': chi11, 'chi19': chi19, 'chi20': chi20})
+
+
+#Oak Park
+def oakpark(request):
+	import requests
+	import json
+
+	oakpark = requests.get("http://foodbankapi.courdevelops.com/foodbank/13/?format=json")
+	op1 = json.loads(oakpark.content)
+
+	return render(request, "oakpark.html", {'op1': op1})
 
 

@@ -3,19 +3,25 @@
 {% block content %}
 
 
-	<br><br>
+	<br>
 
 	<div class="container">
+
+		<h1>Chicago <span class="badge badge-light">IL</span></h1>
+
+		<br>
+
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ chi7.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
-		    <h5 class="card-title">{{ chi7.name }}</h5>
-		    <p class="card-text">{{ chi7.address }}</p>
-		    <p class="card-text">{{ chi7.city }}</p>
-		    <p class="card-text">{{ chi7.state }}</p>
-		    <p class="card-text">{{ chi7.zipcode }}</p>
-		    <p class="card-text">{{ chi7.phone }}</p>
-		    <p class="card-text">{{ chi7.details }}</p>
+		  	<div class="small">
+			    <h5 class="card-title">{{ chi7.name }}</h5>
+			    <p class="card-text">{{ chi7.address }}</p>
+			    <p class="card-text">{{ chi7.city }} {{ chi7.state }} {{ chi7.zipcode }}</p>
+			    <p class="card-text">{{ chi7.phone }}</p>
+			    <p class="card-text">{{ chi7.details }}</p>
+		    </div>
+		    <br>
 		    <a href="{{ chi7.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>
@@ -28,13 +34,14 @@
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ chi8.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
-		    <h5 class="card-title">{{ chi8.name }}</h5>
-		    <p class="card-text">{{ chi8.address }}</p>
-		    <p class="card-text">{{ chi8.city }}</p>
-		    <p class="card-text">{{ chi8.state }}</p>
-		    <p class="card-text">{{ chi8.zipcode }}</p>
-		    <p class="card-text">{{ chi8.phone }}</p>
-		    <p class="card-text">{{ chi8.details }}</p>
+		  	<div class="small">
+			    <h5 class="card-title">{{ chi8.name }}</h5>
+			    <p class="card-text">{{ chi8.address }}</p>
+			    <p class="card-text">{{ chi8.city }} {{ chi8.state }} {{ chi8.zipcode }}</p>
+			    <p class="card-text">{{ chi8.phone }}</p>
+			    <p class="card-text">{{ chi8.details }}</p>
+		    </div>
+		    <br>
 		    <a href="{{ chi8.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>
@@ -46,13 +53,14 @@
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ chi9.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
-		    <h5 class="card-title">{{ chi9.name }}</h5>
-		    <p class="card-text">{{ chi9.address }}</p>
-		    <p class="card-text">{{ chi9.city }}</p>
-		    <p class="card-text">{{ chi9.state }}</p>
-		    <p class="card-text">{{ chi9.zipcode }}</p>
-		    <p class="card-text">{{ chi9.phone }}</p>
-		    <p class="card-text">{{ chi9.details }}</p>
+		  	<div class="small">
+			    <h5 class="card-title">{{ chi9.name }}</h5>
+			    <p class="card-text">{{ chi9.address }} </p>
+			    <p class="card-text">{{ chi9.city }} {{ chi9.state }} {{ chi9.zipcode }}</p>
+			    <p class="card-text">{{ chi9.phone }}</p>
+			    <p class="card-text">{{ chi9.details }}</p>
+		    </div>
+		    <br>
 		    <a href="{{ chi9.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>
@@ -65,13 +73,14 @@
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ chi10.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
-		    <h5 class="card-title">{{ chi10.name }}</h5>
-		    <p class="card-text">{{ chi10.address }}</p>
-		    <p class="card-text">{{ chi10.city }}</p>
-		    <p class="card-text">{{ chi10.state }}</p>
-		    <p class="card-text">{{ chi10.zipcode }}</p>
-		    <p class="card-text">{{ chi10.phone }}</p>
-		    <p class="card-text">{{ chi10.details }}</p>
+		  	<div class="small">
+			    <h5 class="card-title">{{ chi10.name }}</h5>
+			    <p class="card-text">{{ chi10.address }}</p>
+			    <p class="card-text">{{ chi10.city }} {{ chi10.state }} {{ chi10.zipcode }}</p>
+			    <p class="card-text">{{ chi10.phone }}</p>
+			    <p class="card-text">{{ chi10.details }}</p>
+			</div>
+			<br>
 		    <a href="{{ chi10.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>
@@ -83,14 +92,53 @@
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ chi11.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
-		    <h5 class="card-title">{{ chi11.name }}</h5>
-		    <p class="card-text">{{ chi11.address }}</p>
-		    <p class="card-text">{{ chi11.city }}</p>
-		    <p class="card-text">{{ chi11.state }}</p>
-		    <p class="card-text">{{ chi11.zipcode }}</p>
-		    <p class="card-text">{{ chi11.phone }}</p>
-		    <p class="card-text">{{ chi11.details }}</p>
+		  	<div class="small">
+			    <h5 class="card-title">{{ chi11.name }}</h5>
+			    <p class="card-text">{{ chi11.address }}</p>
+			    <p class="card-text">{{ chi11.city }} {{ chi11.state }} {{ chi11.zipcode }}</p>
+			    <p class="card-text">{{ chi11.phone }}</p>
+			    <p class="card-text"><small>{{ chi11.details }}</small></p>
+			</div>
+			<br>
 		    <a href="{{ chi11.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+
+		<br><br>
+
+
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ chi19.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ chi19.name }}</h5>
+			    <p class="card-text">{{ chi19.address }}</p>
+			    <p class="card-text">{{ chi19.city }} {{ chi19.state }} {{ chi19.zipcode }}</p>
+			    <p class="card-text">{{ chi19.phone }}</p>
+			    <p class="card-text"><small>{{ chi19.details }}</small></p>
+			</div>
+			<br>
+		    <a href="{{ chi19.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+
+		<br><br>
+
+
+	<div class="container">
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ chi20.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ chi20.name }}</h5>
+			    <p class="card-text">{{ chi20.address }}</p>
+			    <p class="card-text">{{ chi20.city }} {{ chi20.state }} {{ chi20.zipcode }}</p>
+			    <p class="card-text">{{ chi20.phone }}</p>
+			    <p class="card-text"><small>{{ chi20.details }}</small></p>
+			</div>
+			<br>
+		    <a href="{{ chi20.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>
 

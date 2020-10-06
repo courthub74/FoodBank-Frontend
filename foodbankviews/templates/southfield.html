@@ -6,16 +6,23 @@
 	<br>
 
 	<div class="container">
+
+
+		<h1>Southfield <span class="badge badge-light">MI</span></h1>
+
+		<br>
+
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ south.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
-		    <h5 class="card-title">{{ south.name }}</h5>
-		    <p class="card-text">{{ south.address }}</p>
-		    <p class="card-text">{{ south.city }}</p>
-		    <p class="card-text">{{ south.state }}</p>
-		    <p class="card-text">{{ south.zipcode }}</p>
-		    <p class="card-text">{{ south.phone }}</p>
-		    <p class="card-text">{{ south.details }}</p>
+		  	<div class="small">
+			    <h5 class="card-title">{{ south.name }}</h5>
+			    <p class="card-text">{{ south.address }}</p>
+			    <p class="card-text">{{ south.city }} {{ south.state }} {{ south.zipcode }}</p>
+			    <p class="card-text">{{ south.phone }}</p>
+			    <p class="card-text">{{ south.details }}</p>
+		    </div>
+		    <br>
 		    <a href="{{ south.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>
