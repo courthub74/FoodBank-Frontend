@@ -11,15 +11,14 @@
 		<div class="card" style="width: 18rem;">
 		  <img src="{{ op1.photo }}" class="card-img-top" height="200"  >
 		  <div class="card-body">
-		    
-			    <h5 class="card-title">{{ op1.name }}</h5>
-			    <p class="card-text">{{ op1.address }}</p>
-			    <p class="card-text">{{ op1.city }}</p>
-			    <p class="card-text">{{ op1.state }}</p>
-			    <p class="card-text">{{ op1.zipcode }}</p>
-			    <p class="card-text">{{ op1.phone }}</p>
+		    	<div class="small">
+				    <h5 class="card-title">{{ op1.name }}</h5>
+				    <p class="card-text">{{ op1.address }}</p>
+				    <p class="card-text">{{ op1.city }} {{ op1.state }} {{ op1.zipcode }}</p>
+				    <p class="card-text">{{ op1.phone }}</p>
 			    <p class="card-text"><small>{{ op1.details }}</small></p>
-			 
+			 	</div>
+			 	<br>
 		    <a href="{{ op1.weblink }}" class="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>

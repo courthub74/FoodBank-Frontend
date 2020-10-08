@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br>
+
+	<div class="container">
+
+		<h1>North Chicago <span class="badge badge-light">IL</span></h1>
+
+		<br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ nchi1.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ nchi1.name }}</h5>
+			    <p class="card-text">{{ nchi1.address }}</p>
+			    <p class="card-text">{{ nchi1.city }} {{ nchi1.state }} {{ nchi1.zipcode }}</p>
+			    <p class="card-text">{{ nchi1.phone }}</p>
+			    <p class="card-text">{{ nchi1.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ nchi1.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+
+		<br><br>
+
+		<a href="{% url 'illinois' %}"><button type="button" class="btn btn-light">Back</button>
+
+	</div>
+	
+	<br><br>
+
+
+
+{% endblock %}

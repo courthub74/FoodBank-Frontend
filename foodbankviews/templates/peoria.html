@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<div class="container">
+
+		<h2>Peoria <span class="badge badge-light">IL</span></h2>
+
+		<br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ peoria.photo }}" class="card-img-top" height="200"  >
+		  <div class="card-body">
+		    <div class="small">
+			    <h5 class="card-title">{{ peoria.name }}</h5>
+			    <p class="card-text">{{ peoria.address }}</p>
+			    <p class="card-text">{{ peoria.city }} {{ peoria.state }} {{ peoria.zipcode }}</p>
+			    <p class="card-text">{{ peoria.phone }}</p>
+			    <p class="card-text">{{ peoria.details }}</p>
+			 </div>
+			 <br>
+		    <a href="{{ peoria.weblink }}" class="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+
+		<br><br>
+
+		<a href="{% url 'illinois' %}"><button type="button" class="btn btn-light">Back</button>
+
+	</div>
+	
+	<br><br>
+
+
+{% endblock %}

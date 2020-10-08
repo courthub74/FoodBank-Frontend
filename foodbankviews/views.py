@@ -11,6 +11,13 @@ def home(request):
 def mich(request):
 	return render(request, "mich.html", {})
 
+#Detroit
+# def det(request):
+# 	import requests
+# 	import json
+
+# 	detroit = requests.get("")
+
 #Farmington
 def farm(request):
 	# scrape the Farmington stuff here and then call it through the dictionary
@@ -64,6 +71,15 @@ def southfield(request):
 def illinois(request):
 	return render(request, "illinois.html", {})
 
+#North Chicage
+def chicagonord(request):
+	import requests
+	import json
+
+	northchi = requests.get("https://foodbankapi.herokuapp.com/foodbank/15/?format=json")
+	nchi1 = json.loads(northchi.content)
+
+	return render(request, "northchicago.html", {'nchi1': nchi1})
 
 #Chicago
 def chicago(request):
@@ -91,7 +107,17 @@ def chicago(request):
 	chicago20 = requests.get("https://foodbankapi.herokuapp.com/foodbank/20/?format=json")
 	chi20 = json.loads(chicago20.content)
 
-	return render(request, "chicago.html", {'chi7': chi7, 'chi8': chi8, 'chi9': chi9, 'chi10': chi10, 'chi11': chi11, 'chi19': chi19, 'chi20': chi20})
+	chicago21 = requests.get("https://foodbankapi.herokuapp.com/foodbank/21/?format=json")
+	chi21 = json.loads(chicago21.content)
+
+	chicago22 = requests.get("https://foodbankapi.herokuapp.com/foodbank/22/?format=json")
+	chi22 = json.loads(chicago22.content)
+
+	chicago23 = requests.get("https://foodbankapi.herokuapp.com/foodbank/23/?format=json")
+	chi23 = json.loads(chicago23.content)
+
+	return render(request, "chicago.html", {'chi7': chi7, 'chi8': chi8, 'chi9': chi9, 'chi10': chi10, 'chi11': chi11, 'chi19': chi19, 'chi20': chi20,
+		'chi21': chi21, 'chi22': chi22, 'chi23': chi23})
 
 
 #Oak Park
@@ -103,5 +129,16 @@ def oakpark(request):
 	op1 = json.loads(oakpark.content)
 
 	return render(request, "oakpark.html", {'op1': op1})
+
+
+#Peoria
+def peoria(request):
+	import requests
+	import json
+
+	peoria1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/14/?format=json")
+	peoria = json.loads(peoria1.content)
+
+	return render(request, "peoria.html", {'peoria': peoria})
 
 
