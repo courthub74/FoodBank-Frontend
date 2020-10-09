@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br>
+
+	<div class="container">
+
+		<h1>West Chicago <span class="badge badge-light">IL</span></h1>
+
+		<br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ chiwest.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ chiwest.name }}</h5>
+			    <p class="card-text">{{ chiwest.address }}</p>
+			    <p class="card-text">{{ chiwest.city }} {{ chiwest.state }} {{ chiwest.zipcode }}</p>
+			    <p class="card-text">{{ chiwest.phone }}</p>
+			    <p class="card-text">{{ chiwest.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ chiwest.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+
+		<br><br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ chiwest2.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ chiwest2.name }}</h5>
+			    <p class="card-text">{{ chiwest2.address }}</p>
+			    <p class="card-text">{{ chiwest2.city }} {{ chiwest2.state }} {{ chiwest2.zipcode }}</p>
+			    <p class="card-text">{{ chiwest2.phone }}</p>
+			    <p class="card-text">{{ chiwest2.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ chiwest2.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+
+		<br><br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="{{ chiwest3.photo }}" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ chiwest3.name }}</h5>
+			    <p class="card-text">{{ chiwest3.address }}</p>
+			    <p class="card-text">{{ chiwest3.city }} {{ chiwest3.state }} {{ chiwest3.zipcode }}</p>
+			    <p class="card-text">{{ chiwest3.phone }}</p>
+			    <p class="card-text">{{ chiwest3.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ chiwest3.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+
+		<br><br>
+
+		<a href="{% url 'illinois' %}"><button type="button" class="btn btn-light">Back</button>
+
+	</div>
+	
+	<br><br>
+
+
+
+{% endblock %}

@@ -71,7 +71,7 @@ def southfield(request):
 def illinois(request):
 	return render(request, "illinois.html", {})
 
-#North Chicage
+#North Chicago
 def chicagonord(request):
 	import requests
 	import json
@@ -118,6 +118,27 @@ def chicago(request):
 
 	return render(request, "chicago.html", {'chi7': chi7, 'chi8': chi8, 'chi9': chi9, 'chi10': chi10, 'chi11': chi11, 'chi19': chi19, 'chi20': chi20,
 		'chi21': chi21, 'chi22': chi22, 'chi23': chi23})
+
+
+#West Chicago
+def westchi(request):
+	import requests
+	import json
+
+	westchi = requests.get("http://foodbankapi.courdevelops.com/foodbank/16/?format=json")
+	chiwest = json.loads(westchi.content)
+
+	westchi2 = requests.get("http://foodbankapi.courdevelops.com/foodbank/17/?format=json")
+	chiwest2 = json.loads(westchi2.content)
+
+	westchi3 = requests.get("http://foodbankapi.courdevelops.com/foodbank/18/?format=json")
+	chiwest3 = json.loads(westchi3.content)
+
+	return render(request, "westchi.html", {'chiwest': chiwest, 'chiwest2': chiwest2, 'chiwest3': chiwest3})
+
+	
+
+	
 
 
 #Oak Park
