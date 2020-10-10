@@ -12,11 +12,14 @@ def mich(request):
 	return render(request, "mich.html", {})
 
 #Detroit
-# def det(request):
-# 	import requests
-# 	import json
+def det(request):
+	import requests
+	import json
 
-# 	detroit = requests.get("")
+	gleaners = requests.get("https://foodbankapi.herokuapp.com/foodbank/25/?format=json")
+	det1 = json.loads(gleaners.content)
+
+	return render(request, "detroit.html", {'det1': det1})
 
 #Farmington
 def farm(request):
@@ -53,7 +56,10 @@ def livonia(request):
 	livonia = requests.get("https://foodbankapi.herokuapp.com/foodbank/5/?format=json")
 	liv = json.loads(livonia.content)
 
-	return render(request, "livonia.html", {'liv': liv})
+	standys = requests.get("https://foodbankapi.herokuapp.com/foodbank/26/?format=json")
+	liv2 = json.loads(standys.content)
+
+	return render(request, "livonia.html", {'liv': liv, 'liv2': liv2})
 
 
 #Southfield
@@ -64,7 +70,13 @@ def southfield(request):
 	southfield = requests.get("https://foodbankapi.herokuapp.com/foodbank/6/?format=json")
 	south = json.loads(southfield.content)
 
-	return render(request, "southfield.html", {'south': south})
+	franciscan = requests.get("https://foodbankapi.herokuapp.com/foodbank/27/?format=json")
+	south2 = json.loads(franciscan.content)
+
+	wordoffaith = requests.get("https://foodbankapi.herokuapp.com/foodbank/28/?format=json")
+	south3 = json.loads(wordoffaith.content)
+
+	return render(request, "southfield.html", {'south': south, 'south2': south2, 'south3': south3})
 
 
 #ILLINOIS - List of Cities

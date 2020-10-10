@@ -7,22 +7,22 @@
 
 	<div class="container">
 
-		<h1>Chicago <span class="badge badge-light">IL</span></h1>
+		<h1>Detroit <span class="badge badge-light">MI</span></h1>
 
 		<br>
 
 		<div class="card" style="width: 18rem;">
-		  <img src="https://www.foodpantries.org/gallery/820_the-irving-park-community-food-pantry_ayj.jpg" class="card-img-top" height="200">
+		  <img src="https://www.foodpantries.org/gallery/398_oakland-county-food-bank-gleaners-community-foody-bank-of-southeastern-michigan_xdz.png" class="card-img-top" height="200"> <!-- Heroku has an issue with keeping pics in database the api code is set yet I still have to put the pics in manually or remake the api when I am done-->
 		  <div class="card-body">
 		  	<div class="small">
-			    <h5 class="card-title">{{ chi7.name }}</h5>
-			    <p class="card-text">{{ chi7.address }}</p>
-			    <p class="card-text">{{ chi7.city }} {{ chi7.state }} {{ chi7.zipcode }}</p>
-			    <p class="card-text">{{ chi7.phone }}</p>
-			    <p class="card-text">{{ chi7.details }}</p>
+			    <h5 class="card-title">{{ det1.name }}</h5>
+			    <p class="card-text">{{ det1.address }}</p>
+			    <p class="card-text">{{ det1.city }} {{ det1.state }} {{ det1.zipcode }}</p>
+			    <p class="card-text">{{ det1.phone }}</p>
+			    <p class="card-text">{{ det1.details }}</p>
 		    </div>
 		    <br>
-		    <a href="{{ chi7.weblink }}" target="_blank">Click HERE for the Website</a>
+		    <a href="{{ det1.weblink }}" target="_blank">Click HERE for the Website</a>
 		  </div>
 		</div>
 	
@@ -32,7 +32,7 @@
 
 	
 		<div class="card" style="width: 18rem;">
-		  <img src="https://www.foodpantries.org/gallery/892_lakeview-pantry-of-chicago-illinois_bjv.jpg" class="card-img-top" height="200">
+		  <img src="{{ chi8.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
 		  	<div class="small">
 			    <h5 class="card-title">{{ chi8.name }}</h5>
@@ -51,7 +51,7 @@
 
 	
 		<div class="card" style="width: 18rem;">
-		  <img src="https://www.foodpantries.org/gallery/1073_cornerstone-community-outreach-transitional-shelter-for-homeless-families_mpb.jpg" class="card-img-top" height="200">
+		  <img src="{{ chi9.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
 		  	<div class="small">
 			    <h5 class="card-title">{{ chi9.name }}</h5>
@@ -71,7 +71,7 @@
 
 	
 		<div class="card" style="width: 18rem;">
-		  <img src="https://www.foodpantries.org/gallery/1454_il-redeeming-grace-church-food-pantry_rfs.jpg" class="card-img-top" height="200">
+		  <img src="{{ chi10.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
 		  	<div class="small">
 			    <h5 class="card-title">{{ chi10.name }}</h5>
@@ -166,7 +166,7 @@
 
 	
 		<div class="card" style="width: 18rem;">
-		  <img src="https://www.foodpantries.org/gallery/33127_il_60626_howard-area-community-center_nly.jpg" class="card-img-top" height="200">
+		  <img src="{{ chi22.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
 		  	<div class="small">
 			    <h5 class="card-title">{{ chi22.name }}</h5>
@@ -184,7 +184,7 @@
 
 	
 		<div class="card" style="width: 18rem;">
-		  <img src="https://www.foodpantries.org/gallery/33128_il_60626_chicago-food-pantry_rhx.jpg" class="card-img-top" height="200">
+		  <img src="{{ chi23.photo }}" class="card-img-top" height="200">
 		  <div class="card-body">
 		  	<div class="small">
 			    <h5 class="card-title">{{ chi23.name }}</h5>
