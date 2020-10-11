@@ -19,7 +19,34 @@ def det(request):
 	gleaners = requests.get("https://foodbankapi.herokuapp.com/foodbank/25/?format=json")
 	det1 = json.loads(gleaners.content)
 
-	return render(request, "detroit.html", {'det1': det1})
+	covenant = requests.get("https://foodbankapi.herokuapp.com/foodbank/29/?format=json")
+	det2 = json.loads(covenant.content)
+
+	witts = requests.get("https://foodbankapi.herokuapp.com/foodbank/30/?format=json")
+	det3 = json.loads(witts.content)
+
+	twelfth = requests.get("https://foodbankapi.herokuapp.com/foodbank/31/?format=json")
+	det4 = json.loads(twelfth.content)
+
+	scott = requests.get("https://foodbankapi.herokuapp.com/foodbank/32/?format=json")
+	det5 = json.loads(scott.content)
+
+	salvation = requests.get("https://foodbankapi.herokuapp.com/foodbank/33/?format=json")
+	det6 = json.loads(salvation.content)
+
+	restoration = requests.get("https://foodbankapi.herokuapp.com/foodbank/34/?format=json")
+	det7 = json.loads(restoration.content)
+
+	perfecting = requests.get("https://foodbankapi.herokuapp.com/foodbank/35/?format=json")
+	det8 = json.loads(perfecting.content)
+
+	fathers = requests.get("https://foodbankapi.herokuapp.com/foodbank/36/?format=json")
+	det9 = json.loads(fathers.content)
+
+	linwood = requests.get("https://foodbankapi.herokuapp.com/foodbank/37/?format=json")
+	det10 = json.loads(linwood.content)
+
+	return render(request, "detroit.html", {'det1': det1, 'det2': det2, 'det3': det3, 'det4': det4, 'det5': det5, 'det6': det6, 'det7': det7, 'det8': det8, 'det9': det9, 'det10': det10})
 
 #Farmington
 def farm(request):
