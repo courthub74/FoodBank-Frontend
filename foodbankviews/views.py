@@ -16,6 +16,7 @@ def det(request):
 	import requests
 	import json
 
+
 	gleaners = requests.get("https://foodbankapi.herokuapp.com/foodbank/25/?format=json")
 	det1 = json.loads(gleaners.content)
 
