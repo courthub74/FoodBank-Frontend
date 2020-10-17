@@ -16,4 +16,7 @@ urlpatterns = [
     path('chicago/', views.chicago, name="chicago"),
     path('oakpark/', views.oakpark, name="oakpark"),
     path('peoria/', views.peoria, name="peoria"),
+
+    path('northcarolina.html', views.ncaro, name="northcarolina"),
+    path('raleigh', views.raleigh, name="raleigh"),
 ]

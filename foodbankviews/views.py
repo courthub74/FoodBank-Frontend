@@ -178,9 +178,6 @@ def westchi(request):
 
 	
 
-	
-
-
 #Oak Park
 def oakpark(request):
 	import requests
@@ -202,4 +199,31 @@ def peoria(request):
 
 	return render(request, "peoria.html", {'peoria': peoria})
 
+
+#NORTH CAROLINA
+def ncaro(request):
+	return render(request, "northcarolina.html", {})
+
+#Raleigh
+def raleigh(request):
+	import requests
+	import json
+
+	raleigh1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/38/?format=json")
+	nc1 = json.loads(raleigh1.content)
+
+	raleigh2 = requests.get("http://foodbankapi.courdevelops.com/foodbank/39/?format=json")
+	nc2 = json.loads(raleigh2.content)
+
+	raleigh3 = requests.get("http://foodbankapi.courdevelops.com/foodbank/40/?format=json")
+	nc3 = json.loads(raleigh3.content)
+
+	raleigh4 = requests.get("http://foodbankapi.courdevelops.com/foodbank/41/?format=json")
+	nc4 = json.loads(raleigh4.content)
+
+	raleigh5 = requests.get("http://foodbankapi.courdevelops.com/foodbank/42/?format=json")
+	nc5 = json.loads(raleigh5.content)
+
+
+	return render(request, "raleigh.html", {'nc1': nc1, 'nc2': nc2, 'nc3': nc3, 'nc4': nc4, 'nc5': nc5})
 
