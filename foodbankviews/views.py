@@ -224,6 +224,56 @@ def raleigh(request):
 	raleigh5 = requests.get("http://foodbankapi.courdevelops.com/foodbank/42/?format=json")
 	nc5 = json.loads(raleigh5.content)
 
+	raleigh6 = requests.get("http://foodbankapi.courdevelops.com/foodbank/43/?format=json")
+	nc6 = json.loads(raleigh6.content)
 
-	return render(request, "raleigh.html", {'nc1': nc1, 'nc2': nc2, 'nc3': nc3, 'nc4': nc4, 'nc5': nc5})
+	raleigh7 = requests.get("http://foodbankapi.courdevelops.com/foodbank/44/?format=json")
+	nc7 = json.loads(raleigh7.content)
+
+	raleigh8 = requests.get("http://foodbankapi.courdevelops.com/foodbank/45/?format=json")
+	nc8 = json.loads(raleigh8.content)
+
+	raleigh9 = requests.get("http://foodbankapi.courdevelops.com/foodbank/46/?format=json")
+	nc9 = json.loads(raleigh9.content)
+
+	raleigh10 = requests.get("http://foodbankapi.courdevelops.com/foodbank/47/?format=json")
+	nc10 = json.loads(raleigh10.content)
+
+
+	return render(request, "raleigh.html", {'nc1': nc1, 'nc2': nc2, 'nc3': nc3, 'nc4': nc4, 'nc5': nc5, 'nc6': nc6, 'nc7': nc7, 'nc8': nc8, 'nc9': nc9, 'nc10': nc10})
+
+
+
+#Wilmington
+def willmington(request):
+	import requests
+	import json
+
+	willming1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/48/?format=json")
+	will1 = json.loads(willming1.content)
+
+	willming2 = requests.get("http://foodbankapi.courdevelops.com/foodbank/49/?format=json")
+	will2 = json.loads(willming2.content)
+
+	willming3 = requests.get("http://foodbankapi.courdevelops.com/foodbank/50/?format=json")
+	will3 = json.loads(willming3.content)
+
+	willming4 = requests.get("http://foodbankapi.courdevelops.com/foodbank/51/?format=json")
+	will4 = json.loads(willming4.content)
+
+	willming5 = requests.get("http://foodbankapi.courdevelops.com/foodbank/52/?format=json")
+	will5 = json.loads(willming5.content)
+
+	return render(request, "willmington.html", {'will1': will1, 'will2': will2, 'will3': will3, 'will4': will4, 'will5': will5})
+
+
+#Hampstead
+def hampstead(request):
+	import requests
+	import json
+
+	hampstead1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/53/?format=json")
+	hamp1 = json.loads(hampstead1.content)
+
+	return render(request, "hampstead.html", {'hamp1':hamp1})
 

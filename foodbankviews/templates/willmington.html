@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br>
+
+	<div class="container">
+
+		<h1>Willmington <span class="badge badge-light">NC</span></h1>
+
+		<br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/433_good-shepherd-house-soup-kitchen_lhi.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ will1.name }}</h5>
+			    <p class="card-text">{{ will1.address }}</p>
+			    <p class="card-text">{{ will1.city }} {{ will1.state }} {{ will1.zipcode }}</p>
+			    <p class="card-text">{{ will1.phone }}</p>
+			    <p class="card-text">{{ will1.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ will1.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/531_food-bank-of-central-eastern-nc-wilmington_fmf.png" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ will2.name }}</h5>
+			    <p class="card-text">{{ will2.address }}</p>
+			    <p class="card-text">{{ will2.city }} {{ will2.state }} {{ will2.zipcode }}</p>
+			    <p class="card-text">{{ will2.phone }}</p>
+			    <p class="card-text">{{ will2.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ will2.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/30033_first_fruit_ministries_28412_zwj.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ will3.name }}</h5>
+			    <p class="card-text">{{ will3.address }}</p>
+			    <p class="card-text">{{ will3.city }} {{ will3.state }} {{ will3.zipcode }}</p>
+			    <p class="card-text">{{ will3.phone }}</p>
+			    <p class="card-text">{{ will3.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ will3.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/32809_love-in-action-cape-fear-christian-church_cth.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ will4.name }}</h5>
+			    <p class="card-text">{{ will4.address }}</p>
+			    <p class="card-text">{{ will4.city }} {{ will4.state }} {{ will4.zipcode }}</p>
+			    <p class="card-text">{{ will4.phone }}</p>
+			    <p class="card-text">{{ will4.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ will4.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/37611_wrightsboro-united-methodist-church-food-pantry_wxu.png" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ will5.name }}</h5>
+			    <p class="card-text">{{ will5.address }}</p>
+			    <p class="card-text">{{ will5.city }} {{ will5.state }} {{ will5.zipcode }}</p>
+			    <p class="card-text">{{ will5.phone }}</p>
+			    <p class="card-text">{{ will5.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ will5.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+
+		<br><br>
+
+		<a href="{% url 'northcarolina' %}"><button type="button" class="btn btn-light">Back</button>
+
+	</div>
+
+	
+	<br><br>
+
+
+
+
+{% endblock %}

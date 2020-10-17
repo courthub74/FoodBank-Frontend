@@ -19,4 +19,5 @@ urlpatterns = [
 
     path('northcarolina.html', views.ncaro, name="northcarolina"),
     path('raleigh', views.raleigh, name="raleigh"),
+    path('willmington', views.willmington, name="willmington"),
 ]
