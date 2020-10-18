@@ -275,5 +275,11 @@ def hampstead(request):
 	hampstead1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/53/?format=json")
 	hamp1 = json.loads(hampstead1.content)
 
-	return render(request, "hampstead.html", {'hamp1':hamp1})
+	hampstead2 = requests.get("http://foodbankapi.courdevelops.com/foodbank/54/?format=json")
+	hamp2 = json.loads(hampstead2.content)
+
+	hampstead3 = requests.get("http://foodbankapi.courdevelops.com/foodbank/55/?format=json")
+	hamp3 = json.loads(hampstead3.content)
+
+	return render(request, "hampstead.html", {'hamp1':hamp1, 'hamp2':hamp2, 'hamp3':hamp3})
 

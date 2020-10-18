@@ -18,6 +18,7 @@ urlpatterns = [
     path('peoria/', views.peoria, name="peoria"),
 
     path('northcarolina.html', views.ncaro, name="northcarolina"),
-    path('raleigh', views.raleigh, name="raleigh"),
-    path('willmington', views.willmington, name="willmington"),
+    path('raleigh/', views.raleigh, name="raleigh"),
+    path('willmington/', views.willmington, name="willmington"),
+    path('hampstead/', views.hampstead, name="hampstead"),
 ]
