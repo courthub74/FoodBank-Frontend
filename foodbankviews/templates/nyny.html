@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br>
+
+	<div class="container">
+
+		<h1>New York <span class="badge badge-light">NY</span></h1>
+
+		<br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/38981_ny_10022_crossroads-community-services_hig.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ ny1.name }}</h5>
+			    <p class="card-text">{{ ny1.address }}</p>
+			    <p class="card-text">{{ ny1.city }} {{ ny1.state }} {{ ny1.zipcode }}</p>
+			    <p class="card-text">{{ ny1.phone }}</p>
+			    <p class="card-text">{{ ny1.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ ny1.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/1219_bowery-mission_cej.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ ny2.name }}</h5>
+			    <p class="card-text">{{ ny2.address }}</p>
+			    <p class="card-text">{{ ny2.city }} {{ ny2.state }} {{ ny2.zipcode }}</p>
+			    <p class="card-text">{{ ny2.phone }}</p>
+			    <p class="card-text">{{ ny2.details }} <a href="https://www.bowery.org/get-involved" target="_blank"> Click Here</p>
+		    </div>
+		    <br>
+		    <a href="{{ ny2.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/2710_momentum_project_at_st._peters_lutheran_church_10022_kcn.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ ny3.name }}</h5>
+			    <p class="card-text">{{ ny3.address }}</p>
+			    <p class="card-text">{{ ny3.city }} {{ ny3.state }} {{ ny3.zipcode }}</p>
+			    <p class="card-text">{{ ny3.phone }}</p>
+			    <p class="card-text">{{ ny3.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ ny3.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/2707_middle_collegiate_church_10003_vhu.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ ny4.name }}</h5>
+			    <p class="card-text">{{ ny4.address }}</p>
+			    <p class="card-text">{{ ny4.city }} {{ ny4.state }} {{ ny4.zipcode }}</p>
+			    <p class="card-text">{{ ny4.phone }}</p>
+			    <p class="card-text">{{ ny4.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ ny4.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/2699_jan_hus_presbyterian_church_homeless_outreach_and_advocacy_program_(hoap)_10021_lyz.gif" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ ny5.name }}</h5>
+			    <p class="card-text">{{ ny5.address }}</p>
+			    <p class="card-text">{{ ny5.city }} {{ ny5.state }} {{ ny5.zipcode }}</p>
+			    <p class="card-text">{{ ny5.phone }}</p>
+			    <p class="card-text">{{ ny5.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ ny5.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+
+		<br><br>
+
+		<a href="{% url 'northcarolina' %}"><button type="button" class="btn btn-light">Back</button>
+
+	</div>
+
+	
+	<br><br>
+
+
+
+
+{% endblock %}

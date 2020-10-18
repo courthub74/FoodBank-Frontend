@@ -17,8 +17,11 @@ urlpatterns = [
     path('oakpark/', views.oakpark, name="oakpark"),
     path('peoria/', views.peoria, name="peoria"),
 
-    path('northcarolina.html', views.ncaro, name="northcarolina"),
+    path('northcarolina/', views.ncaro, name="northcarolina"),
     path('raleigh/', views.raleigh, name="raleigh"),
     path('willmington/', views.willmington, name="willmington"),
     path('hampstead/', views.hampstead, name="hampstead"),
+
+    path('newyork/', views.newyork, name="newyork"),
+    path('nyny/', views.manhattan, name="nyny"),
 ]

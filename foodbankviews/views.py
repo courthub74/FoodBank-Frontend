@@ -107,6 +107,8 @@ def southfield(request):
 	return render(request, "southfield.html", {'south': south, 'south2': south2, 'south3': south3})
 
 
+################################################################################################
+
 #ILLINOIS - List of Cities
 def illinois(request):
 	return render(request, "illinois.html", {})
@@ -199,6 +201,7 @@ def peoria(request):
 
 	return render(request, "peoria.html", {'peoria': peoria})
 
+################################################################################################
 
 #NORTH CAROLINA
 def ncaro(request):
@@ -282,4 +285,35 @@ def hampstead(request):
 	hamp3 = json.loads(hampstead3.content)
 
 	return render(request, "hampstead.html", {'hamp1':hamp1, 'hamp2':hamp2, 'hamp3':hamp3})
+
+
+
+################################################################################################
+
+
+#NEW YORK
+def newyork(request):
+	return render(request, "newyork.html", {})
+
+#Manhattan
+def manhattan(request):
+	import requests
+	import json
+
+	manhat1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/56/?format=json")
+	ny1 = json.loads(manhat1.content)
+
+	manhat2 = requests.get("http://foodbankapi.courdevelops.com/foodbank/57/?format=json")
+	ny2 = json.loads(manhat2.content)
+
+	manhat3 = requests.get("http://foodbankapi.courdevelops.com/foodbank/58/?format=json")
+	ny3 = json.loads(manhat3.content)
+
+	manhat4 = requests.get("http://foodbankapi.courdevelops.com/foodbank/59/?format=json")
+	ny4 = json.loads(manhat4.content)
+
+	manhat5 = requests.get("http://foodbankapi.courdevelops.com/foodbank/60/?format=json")
+	ny5 = json.loads(manhat5.content)
+
+	return render(request, "nyny.html", {'ny1': ny1, 'ny2': ny2, 'ny3': ny3, 'ny4': ny4, 'ny5': ny5})
 

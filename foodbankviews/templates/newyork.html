@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<style type="text/css">
+		.black {
+			color: black;
+		}
+	</style>
+
+
+	<br>
+
+
+		<div class="container">
+
+			<ul class="list-group">
+				<li class="list-group-item disabled" aria-disabled="true">New York</li>
+				 <a class="list-group-item d-flex justify-content-between align-items-center" href="{% url 'nyny' %}">
+				    <span class="black">Manhattan</span>
+				    <span class="badge badge-success badge-pill">5</span>
+				 </a>
+
+				 <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+				    <span class="black">Brooklyn</span>
+				    <span class="badge badge-success badge-pill">5</span>
+				 </a>
+
+				 <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+				    <span class="black">Queens</span>
+				    <span class="badge badge-success badge-pill">5</span>
+				 </a>
+
+				 
+			</ul>
+
+			<br>
+
+			<a href="{% url 'newyork' %}"><button type="button" class="btn btn-light btn-lg btn-block"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd2%2FFood_Bank_icon.svg%2F2000px-Food_Bank_icon.svg.png&f=1&nofb=1" width="40" height="40"><span class="black"><small>Home</small></span></button></a>
+
+
+		<br> 
+
+	
+
+{% endblock %}
