@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br>
+
+	<div class="container">
+
+		<h1>Brooklyn <span class="badge badge-light">NY</span></h1>
+
+		<br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/36630_st-paul-pentecostal-kingdom-builders-food-pantry_lbe.png" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ bk1.name }}</h5>
+			    <p class="card-text">{{ bk1.address }}</p>
+			    <p class="card-text">{{ bk1.city }} {{ bk1.state }} {{ bk1.zipcode }}</p>
+			    <p class="card-text">{{ bk1.phone }}</p>
+			    <p class="card-text">{{ bk1.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ bk1.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/38477_ny_11217_recovery-house-of-worship_ovt.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ bk2.name }}</h5>
+			    <p class="card-text">{{ bk2.address }}</p>
+			    <p class="card-text">{{ bk2.city }} {{ bk2.state }} {{ bk2.zipcode }}</p>
+			    <p class="card-text">{{ bk2.phone }}</p>
+			    <p class="card-text">{{ bk2.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ bk2.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/1587_greenpoint-reformed-church-food-pantry_fjl.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ bk3.name }}</h5>
+			    <p class="card-text">{{ bk3.address }}</p>
+			    <p class="card-text">{{ bk3.city }} {{ bk3.state }} {{ bk3.zipcode }}</p>
+			    <p class="card-text">{{ bk3.phone }}</p>
+			    <p class="card-text">{{ bk3.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ bk3.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/1676_reaching-out-community-services_wab.png" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ bk4.name }}</h5>
+			    <p class="card-text">{{ bk4.address }}</p>
+			    <p class="card-text">{{ bk4.city }} {{ bk4.state }} {{ bk4.zipcode }}</p>
+			    <p class="card-text">{{ bk4.phone }}</p>
+			    <p class="card-text">{{ bk4.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ bk4.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/2787_bay_ridge_center_for_older_adults_11217_adt.png" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ bk5.name }}</h5>
+			    <p class="card-text">{{ bk5.address }}</p>
+			    <p class="card-text">{{ bk5.city }} {{ bk5.state }} {{ bk5.zipcode }}</p>
+			    <p class="card-text">{{ bk5.phone }}</p>
+			    <p class="card-text">{{ bk5.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ bk5.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+
+		<br><br>
+
+		<a href="{% url 'brooklyn' %}"><button type="button" class="btn btn-secondary btn-block">Back to Top</button><br>
+		<a href="{% url 'newyork' %}"><button type="button" class="btn btn-secondary btn-block">Back to NY</button><br>
+
+		<a href="{% url 'home' %}"><button type="button" class="btn btn-secondary btn-lg btn-block"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd2%2FFood_Bank_icon.svg%2F2000px-Food_Bank_icon.svg.png&f=1&nofb=1" width="40" height="40"><span class="black"><small>Home</small></span></button></a>
+	</div>
+
+	
+	<br><br>
+
+
+
+
+{% endblock %}

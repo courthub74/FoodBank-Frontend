@@ -317,3 +317,25 @@ def manhattan(request):
 
 	return render(request, "nyny.html", {'ny1': ny1, 'ny2': ny2, 'ny3': ny3, 'ny4': ny4, 'ny5': ny5})
 
+
+#Brooklyn
+def brooklyn(request):
+	import requests
+	import json
+
+	brook1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/61/?format=json")
+	bk1 = json.loads(brook1.content)
+
+	brook2 = requests.get("http://foodbankapi.courdevelops.com/foodbank/63/?format=json")
+	bk2 = json.loads(brook2.content)
+
+	brook3 = requests.get("http://foodbankapi.courdevelops.com/foodbank/64/?format=json")
+	bk3 = json.loads(brook3.content)
+
+	brook4 = requests.get("http://foodbankapi.courdevelops.com/foodbank/65/?format=json")
+	bk4 = json.loads(brook4.content)
+
+	brook5 = requests.get("http://foodbankapi.courdevelops.com/foodbank/66/?format=json")
+	bk5 = json.loads(brook5.content)
+
+	return render(request, "brooklyn.html", {'bk1': bk1, 'bk2': bk2, 'bk3': bk3, 'bk4': bk4, 'bk5': bk5})
