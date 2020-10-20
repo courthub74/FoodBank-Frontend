@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br>
+
+	<div class="container">
+
+		<h1>Queens <span class="badge badge-light">NY</span></h1>
+
+		<br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/3048_brooks_memorial_united_methodist_church_11435_oha.png" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ q1.name }}</h5>
+			    <p class="card-text">{{ q1.address }}</p>
+			    <p class="card-text">{{ q1.city }} {{ q1.state }} {{ q1.zipcode }}</p>
+			    <p class="card-text">{{ q1.phone }}</p>
+			    <p class="card-text">{{ q1.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ q1.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/no_photo_8.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ q2.name }}</h5>
+			    <p class="card-text">{{ q2.address }}</p>
+			    <p class="card-text">{{ q2.city }} {{ q2.state }} {{ q2.zipcode }}</p>
+			    <p class="card-text">{{ q2.phone }}</p>
+			    <p class="card-text">{{ q2.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ q2.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/3057_first_baptist_church_11369_hfo.gif" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ q3.name }}</h5>
+			    <p class="card-text">{{ q3.address }}</p>
+			    <p class="card-text">{{ q3.city }} {{ q3.state }} {{ q3.zipcode }}</p>
+			    <p class="card-text">{{ q3.phone }}</p>
+			    <p class="card-text">{{ q3.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ q3.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/3061_first_reformed_church_of_jamaica_11432_gcg.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ q4.name }}</h5>
+			    <p class="card-text">{{ q4.address }}</p>
+			    <p class="card-text">{{ q4.city }} {{ q4.state }} {{ q4.zipcode }}</p>
+			    <p class="card-text">{{ q4.phone }}</p>
+			    <p class="card-text">{{ q4.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ q4.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/3062_first_united_methodist_church_of_jamaica_11432_lse.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ q5.name }}</h5>
+			    <p class="card-text">{{ q5.address }}</p>
+			    <p class="card-text">{{ q5.city }} {{ q5.state }} {{ q5.zipcode }}</p>
+			    <p class="card-text">{{ q5.phone }}</p>
+			    <p class="card-text">{{ q5.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ q5.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+
+		<br><br>
+
+		<a href="{% url 'queens' %}"><button type="button" class="btn btn-secondary btn-block">Back to Top</button><br>
+		<a href="{% url 'newyork' %}"><button type="button" class="btn btn-secondary btn-block">Back to NY</button><br>
+
+		<a href="{% url 'home' %}"><button type="button" class="btn btn-secondary btn-lg btn-block"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd2%2FFood_Bank_icon.svg%2F2000px-Food_Bank_icon.svg.png&f=1&nofb=1" width="40" height="40"><span class="black"><small>Home</small></span></button></a>
+	</div>
+
+	
+	<br><br>
+
+
+
+
+{% endblock %}

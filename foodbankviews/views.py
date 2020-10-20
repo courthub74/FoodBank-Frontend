@@ -339,3 +339,46 @@ def brooklyn(request):
 	bk5 = json.loads(brook5.content)
 
 	return render(request, "brooklyn.html", {'bk1': bk1, 'bk2': bk2, 'bk3': bk3, 'bk4': bk4, 'bk5': bk5})
+
+
+#Bronx
+def bronx(request):
+	import requests
+	import json
+
+	bronx1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/67/?format=json")
+	bx1 = json.loads(bronx1.content)
+
+	bronx2 = requests.get("http://foodbankapi.courdevelops.com/foodbank/68/?format=json")
+	bx2 = json.loads(bronx2.content)
+
+	bronx3 = requests.get("http://foodbankapi.courdevelops.com/foodbank/69/?format=json")
+	bx3 = json.loads(bronx3.content)
+
+
+	return render(request, "bronx.html", {'bx1': bx1, 'bx2': bx2, 'bx3': bx3})
+
+
+#Queens
+def queens(request):
+	import requests
+	import json 
+
+	queens1 = requests.get("http://foodbankapi.courdevelops.com/foodbank/70/?format=json")
+	q1 = json.loads(queens1.content)
+
+	queens2 = requests.get("http://foodbankapi.courdevelops.com/foodbank/71/?format=json")
+	q2 = json.loads(queens2.content)
+
+	queens3 = requests.get("http://foodbankapi.courdevelops.com/foodbank/72/?format=json")
+	q3 = json.loads(queens3.content)
+
+	queens4 = requests.get("http://foodbankapi.courdevelops.com/foodbank/73/?format=json")
+	q4 = json.loads(queens4.content)
+
+	queens5 = requests.get("http://foodbankapi.courdevelops.com/foodbank/74/?format=json")
+	q5 = json.loads(queens5.content)
+
+	return render(request, "queens.html", {'q1': q1, 'q2': q2, 'q3': q3, 'q4': q4, 'q5': q5})
+
+

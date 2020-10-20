@@ -25,4 +25,6 @@ urlpatterns = [
     path('newyork/', views.newyork, name="newyork"),
     path('nyny/', views.manhattan, name="nyny"),
     path('brooklyn/', views.brooklyn, name="brooklyn"),
+    path('bronx/', views.bronx, name="bronx"),
+    path('queens/', views.queens, name="queens"),
 ]

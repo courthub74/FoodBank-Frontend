@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+	<br>
+
+	<div class="container">
+
+		<h1>Bronx <span class="badge badge-light">NY</span></h1>
+
+		<br>
+
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/2606_missionary_church_of_christ_10451_xam.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ bx1.name }}</h5>
+			    <p class="card-text">{{ bx1.address }}</p>
+			    <p class="card-text">{{ bx1.city }} {{ bk1.state }} {{ bx1.zipcode }}</p>
+			    <p class="card-text">{{ bx1.phone }}</p>
+			    <p class="card-text">{{ bx1.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ bx1.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/2607_st._anns_corner_of_harm_reduction_(sachr)_10451_cnk.jpg" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ bx2.name }}</h5>
+			    <p class="card-text">{{ bx2.address }}</p>
+			    <p class="card-text">{{ bx2.city }} {{ bx2.state }} {{ bx2.zipcode }}</p>
+			    <p class="card-text">{{ bx2.phone }}</p>
+			    <p class="card-text">{{ bx2.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ bx2.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+	
+	
+	<br><br>
+
+	
+		<div class="card" style="width: 18rem;">
+		  <img src="https://www.foodpantries.org/gallery/2608_calvary_delivery_christian_assembly_10451_ejd.png" class="card-img-top" height="200">
+		  <div class="card-body">
+		  	<div class="small">
+			    <h5 class="card-title">{{ bx3.name }}</h5>
+			    <p class="card-text">{{ bx3.address }}</p>
+			    <p class="card-text">{{ bx3.city }} {{ bx3.state }} {{ bx3.zipcode }}</p>
+			    <p class="card-text">{{ bx3.phone }}</p>
+			    <p class="card-text">{{ bx3.details }}</p>
+		    </div>
+		    <br>
+		    <a href="{{ bx3.weblink }}" target="_blank">Click HERE for the Website</a>
+		  </div>
+		</div>
+
+		<br><br>
+
+		<a href="{% url 'bronx' %}"><button type="button" class="btn btn-secondary btn-block">Back to Top</button><br>
+		<a href="{% url 'newyork' %}"><button type="button" class="btn btn-secondary btn-block">Back to NY</button><br>
+
+		<a href="{% url 'home' %}"><button type="button" class="btn btn-secondary btn-lg btn-block"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd2%2FFood_Bank_icon.svg%2F2000px-Food_Bank_icon.svg.png&f=1&nofb=1" width="40" height="40"><span class="black"><small>Home</small></span></button></a>
+	</div>
+
+	
+	<br><br>
+
+
+
+
+{% endblock %}
